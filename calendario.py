@@ -86,6 +86,6 @@ df_ = pd.DataFrame(columns=columns)
 df_['date']= date 
 df_['person']= person 
 df_['hours']= hours
-df_.to_csv('out.csv')
-
+# modifica  da csv a excel  Piero
+df_.to_excel('out.xlsx')
 df_.sort(['person'])
