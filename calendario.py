@@ -23,8 +23,8 @@ def converti_data(data):
 def restituisci_ore(data):
     return float(data.seconds/3600)
 
-# leggi la tabella
-foglio = pd.read_csv('calendar.csv')
+# leggi la tabella excel  modifica Piero
+foglio = pd.read_excel('calendar.xlsx')
 
 # array dove mettere le ore lavorate
 ore_lavorate = []
@@ -86,6 +86,6 @@ df_ = pd.DataFrame(columns=columns)
 df_['date']= date 
 df_['person']= person 
 df_['hours']= hours
-df_.to_csv('out.csv')
-
+# modifica  da csv a excel  Piero
+df_.to_excel('out.xlsx')
 df_.sort(['person'])
